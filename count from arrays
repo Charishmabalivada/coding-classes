@@ -1,0 +1,35 @@
+import java.util.*;
+class Primenumbers
+{
+    public static void main(String ars[])
+    {
+    
+          int i,j,primecount=0,n=5;
+          int prime;
+          int a[]={11,12,4,61,23};
+        for(i=1;i<n;i++)
+        {
+            prime=0;
+        
+         for(j=2;j<=i/2;j++)
+            {
+                
+             if(i%j==0)
+             {
+                prime=1;
+                break;
+             }
+             
+            }
+            if(prime==0)
+            {
+                primecount++;
+            }
+        }
+
+        
+        System.out.print("count of primenumbers in an array:"+primecount);
+        
+        
+    }    
+}
