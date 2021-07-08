@@ -1,0 +1,28 @@
+import java.util.*;
+class RightRotation
+{
+    public static void main(String args[])
+    {
+        int arr[]={1, 2, 3, 4, 5};
+        int d=2,n=5;
+        while(d>n)
+        {
+            d=d-n;
+        }
+        int r[]=new int[n-d];
+        for(int i=0;i<n-d;i++)
+        r[i]=arr[i];
+        for(int i=n-d;i<n;i++)
+        {
+            arr[i-d-1]=arr[i];
+        }
+        for(int i=0;i<n-d;i++)
+        {
+            arr[i+d]=r[i];
+        }
+        for(int i=0;i<n;i++)
+        System.out.print(arr[i]+" ");
+    }
+    
+    
+}
