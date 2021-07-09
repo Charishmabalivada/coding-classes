@@ -1,0 +1,22 @@
+import java.util.*;
+class Length
+{
+    public static void main(String args[])
+    {
+        String str ;
+        Scanner sc=new Scanner(System.in);
+        int count=0,i=0;
+        System.out.print("Enter string:");
+        str=sc.nextLine();
+        while(i<str.length())
+        {
+            if(str.charAt(i)!=' ')
+            {
+            count++;
+            }
+            i++;
+        }
+        System.out.println("Total no. of characters in a string:"+count);
+        
+    }
+}
