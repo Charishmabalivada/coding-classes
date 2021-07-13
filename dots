@@ -1,0 +1,17 @@
+import java.util.*;
+public class Capitalletter
+{
+	public static void main(String[] args) {
+	    String str;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("Enter a sentence:");
+	    str=sc.nextLine();
+        StringBuilder newstr=new StringBuilder(str.length());
+        String w[]=str.split(" ");
+        for(int i=0;i<w.length;i++)
+        {
+            newstr.append(Character.toUpperCase(w[i].charAt(0))).append(w[i].substring(1)).append(" ");
+        }
+        System.out.println(newstr);
+    }
+}
