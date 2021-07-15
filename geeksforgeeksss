@@ -1,0 +1,37 @@
+class GfG
+{
+    /*inserts an element x at 
+    the back of the ArrayList A */
+    void add_to_ArrayList(ArrayList<Integer> A, int x)
+    {
+    A.add(x);	// Your code here
+    }	
+	
+    /*sort the ArrayList A in ascending order*/
+    void sort_ArrayList_Asc(ArrayList<Integer> A)
+    {
+	System.out.println(Collections.sort(A Collections.sort(A));  // Your code here
+    }
+	
+    /*reverses the ArrayList A*/
+    void reverse_ArrayList(ArrayList<Integer> A)
+    {
+	System.out.println(Collection.reverse(A));
+	Collections.reverse(A);// Your code here
+    }
+	
+    /*returns the size of the ArrayList A */
+    int size_Of_ArrayList(ArrayList<Integer> A)
+    {
+	 int x;
+	 x = A.size();
+	 return x;// Your code here
+    }
+	
+    /*sorts the ArrayList A in descending order*/
+    void sort_ArrayList_Desc(ArrayList<Integer> A)
+    {
+    Collection.Sort(A);
+    System.out.println(Collections.reverse(A));
+    Collections.sort(A,Collections.reverseOrder());// Your code here
+    }
