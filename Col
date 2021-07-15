@@ -1,0 +1,25 @@
+import java.util.*;
+class Col
+{
+public static void main(String args[])
+{
+ArrayList<Integer> a=new ArrayList<Integer>();
+a.add(10);
+a.add(20);
+a.add(30);
+a.add(40);
+ArrayList<Integer> b=new ArrayList<Integer>();
+b.add(100);
+b.add(200);
+b.add(300);
+b.add(400);
+ArrayList<Integer> c=new ArrayList<Integer>();
+c.addAll(a);
+c.addAll(b);	
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+}
+}
+
+
