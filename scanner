@@ -1,0 +1,25 @@
+import java.util.*;
+class List
+{
+public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   int n;
+   ArrayList<Integer> a=new ArrayList<Integer>();
+   System.out.println("Enter n value:");
+   n=sc.nextInt();
+   for(int i=0;i<n;i++)
+   {
+    a.add(sc.nextInt());
+    }
+   System.out.println("list of a:"+a);
+   a.set(1,99);
+   System.out.println("list of a:"+a);
+   System.out.println("Enter value in array,update value:");
+   int key=sc.nextInt();
+   if(a.contains(key))
+   System.out.println("True");
+   else
+   System.out.println("False");
+  }
+}
