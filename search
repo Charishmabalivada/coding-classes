@@ -1,0 +1,26 @@
+[10:38 PM, 7/16/2021] Frn Teju: import java.util.*;
+public class LinkedList
+{
+	public static void main(String[] args) {
+		
+   Scanner sc=new Scanner(System.in);
+   int n;
+   LinkedList<Integer> l=new LinkedList<Integer>();
+   System.out.println("Enter n value:");
+   n=sc.nextInt();
+   for(int i=0;i<n;i++)
+   {
+   l.add(sc.nextInt());
+   }
+    System.out.println("list of l:"+l);
+    
+    l.remove(2);
+    System.out.println("List after deletion:"+l);
+    System.out.println("Enter value to search:");
+    int key=sc.nextInt();
+    if(l.contains(key))
+    System.out.println("Element found");
+    else
+     System.out.println("Element not found");
+  }
+}
