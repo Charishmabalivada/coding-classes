@@ -1,0 +1,43 @@
+import java.util.*;
+public class LinkedList
+{
+	
+	public static void main(String[] args)
+	{   
+	 
+   Scanner sc=new Scanner(System.in);
+   LinkedList<Integer> a=new LinkedList<Integer>();
+   int n,ch;
+   do
+   {
+   System.out.println("1.BeginInsert\n 2.EndInsert\n 3.PositionInsert\n 4.BeginDelete\n 5.EndDelete\n 6.PositionDelete\n 7.Display\n 8.Exit\n ");
+   System.out.print("Enter your choice:");
+   ch=sc.nextInt();
+   switch(ch)
+   {
+    case 1:System.out.print("Enter n value:");
+           n=sc.nextInt();
+           a.addFirst(n);
+           break;
+    case 2:System.out.print("Enter n value:");
+           n=sc.nextInt();
+           a.addLast(n);
+           break; 
+    case 3:System.out.print("Enter n value:");
+           n=sc.nextInt();
+           a.add(3);
+            break;
+   case 4: a.removeFirst();
+           break; 
+    case 5: a.removeLast();
+           break; 
+    case 6: a.remove(3);
+           break; 
+   
+    case 7:System.out.println(a+" ");
+    default:System.out.println("exit");
+   }
+    
+     }while(ch<6);
+  }
+}
