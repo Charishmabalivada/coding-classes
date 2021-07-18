@@ -1,0 +1,71 @@
+class MyHashSet {
+   class Node{
+       int val;
+       Node next;
+       
+    public Node(int val){
+        this.val=val;
+    }
+   }
+    private int size;
+    private Node[]array;
+    /** Initialize your data structure here. */
+    public MyHashSet() {
+       this.size=100;
+        this.array=new Node[100];
+       } 
+    
+    
+    public void add(int key) {
+        int index=key%this.size;
+        if(this.array[index]==null){
+            this.array[index]=new Node(key);
+            return;
+        }else
+        {
+            Node n=this.array[index];
+            while(n!=null&&n.val!=key)
+              n=n.next;
+            
+            if(n!=null)
+                return;
+            
+            Node newHead=new Node(key);
+            newHead.next=this.array[index];
+            this.array[index]=newHead;
+        }
+    }
+    
+    public void remove(int key) {
+        int index=key%this.size;
+        if(this.array[index]==null)
+        {
+            return;
+        }
+        else
+        {
+            Node n=this.array[index];
+            if(n.val==key)
+            {
+                this.array[index]=n.next;
+                return;
+            }
+            while(n.next!=null&&n.next.val!=key)
+                n=n.next;
+            if(n.next==null)
+                return;
+            n.next=n.next.next;
+        }
+    }
+    
+    /** Returns true if this set contains the specified element */
+    public boolean contains(int key) {
+        int index=key%this.size;
+        if(this.array[index]==null)
+            return false;
+        Node n=this.array[index];
+        while(n!=null&&n.val!=key)
+            n=n.next;
+        return n!=null;
+    }
+}
