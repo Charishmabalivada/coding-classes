@@ -1,0 +1,29 @@
+import java.util.*;
+public class Vector
+{
+	
+	public static void main(String[] args)
+	{   
+	    Vector x=new Vector();
+	 Scanner sc=new Scanner(System.in);
+	 int n=6;
+	 for(int i=0;i<n;i++)
+	 {
+	     x.add(sc.next());
+	 }
+ System.out.println(x);
+ x.set(1,"Rama");
+ 
+  System.out.println(x);
+ x.remove(4);
+ System.out.println(x);
+ x.set(2,9.17);
+  System.out.println(x);
+
+   if(x.contains("Sita"))
+   System.out.println("True");
+   else
+   System.out.println("False");
+   
+  }
+}
