@@ -1,0 +1,25 @@
+import java.util.*;
+class ArrayList
+{
+	public static void main(String[] args) 
+	{
+	ArrayList<Integer> a=new ArrayList<Integer>();
+	 a.add(30);
+     a.add(40);
+     a.add(15);
+     a.add(20);
+     a.add(25);
+     a.add(7);
+     a.add(99);
+      Iterator<Integer> k=a.iterator();
+      while(k.hasNext())
+      {
+        int x=k.next();
+        if(x<25) 
+        k.remove();
+      }
+        System.out.println(a);
+      
+    }
+	
+}
