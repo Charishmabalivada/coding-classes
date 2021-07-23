@@ -1,0 +1,24 @@
+import java.util.*;
+class HashTable
+{
+public static void main(String args[])
+   { 
+     Scanner sc=new Scanner(System.in);
+     Hashtable<Integer,Integer> x=new Hashtable<Integer,Integer>();
+     x.put(101,50000);
+     x.put(102,45000);
+     x.put(103,35000);
+     x.put(104,40000);
+     x.put(105,45000);
+     System.out.println(x);
+     System.out.print("Enter key value:");
+     int key=sc.nextInt();
+     if(x.containsKey(key))
+     {
+     System.out.println(key+"="+(x.get(key)+5000));
+     }
+     else
+     System.out.println("Value not found");
+     System.out.println(x);
+    }
+}
