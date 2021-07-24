@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 String str="ADITYA";
+      Stack<Character> st=new Stack<Character>();
+      for(int i=0;i<str.length();i++)
+      {
+          st.push(str.charAt(i));
+      }
+      System.out.println("Reverse of a string:");
+      while(!st.empty())
+      {
+          System.out.print(st.pop());
+      }
+	}
+}
